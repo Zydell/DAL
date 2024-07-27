@@ -30,7 +30,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   await authorRepo.delete(req.params.id);
-  res.status(204).send();
+  res.status(201).send('Autor eliminado correctamente');
 });
 
 module.exports = router;
